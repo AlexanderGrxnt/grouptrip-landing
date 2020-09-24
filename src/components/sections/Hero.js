@@ -62,21 +62,21 @@ const Hero = ({
           <div className="hero-content">
             {/* TITLE */}
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Landing template for <span className="text-color-primary">startups</span>
+              Holidays with friends made <span className="text-color-primary">easy</span>.
             </h1>
 
             <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
-                </p>
+              <p className="m-0 mb-12 reveal-from-bottom" data-reveal-delay="400">
+                Reduce the pain of organising a group of friends to get away on holiday. Quick and easy voting on the things that matter.
+              </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
-                    </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                    Sign Up
+                  </Button>
+                  {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
                     View on Github
-                    </Button>
+                  </Button> */}
                 </ButtonGroup>
               </div>
             </div>
@@ -92,7 +92,7 @@ const Hero = ({
             >
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
+                src={require('./../../assets/images/video-preview.png')}
                 alt="Hero"
                 width={1440}
                 height={900} />

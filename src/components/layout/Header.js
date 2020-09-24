@@ -86,9 +86,10 @@ const Header = ({
             bottomDivider && 'has-bottom-divider'
           )}>
           <Logo />
+          {/* <h3 className="company-name">GROUP TRIP</h3> */}
           {!hideNav &&
             <>
-              <button
+              {/* <button
                 ref={hamburger}
                 className="header-nav-toggle"
                 onClick={isActive ? closeMenu : openMenu}
@@ -97,7 +98,7 @@ const Header = ({
                 <span className="hamburger">
                   <span className="hamburger-inner"></span>
                 </span>
-              </button>
+              </button> */}
               <nav
                 ref={nav}
                 className={
@@ -106,7 +107,7 @@ const Header = ({
                     isActive && 'is-active'
                   )}>
                 <div className="header-nav-inner">
-                  <ul className={
+                  {/* <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
@@ -114,18 +115,19 @@ const Header = ({
                     <li>
                       <Link to="#0" onClick={closeMenu}>Documentation</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="#0" className="button-margin-right button button-primary  button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
                       </li>
                     </ul>}
                 </div>
               </nav>
-            </>}
+            </>
+            }
         </div>
       </div>
     </header>

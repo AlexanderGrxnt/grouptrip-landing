@@ -4,8 +4,8 @@
 	width: 100%;
 	z-index: 10 !important;
 	//background: color-bg(header);
-	background-color: rgba(21,23,25,0.5);
-
+	background-color: #65c4dd;
+	//box-shadow: color-bg(shadow-small);
 
 
 	+ .site-content {
@@ -25,6 +25,11 @@
     justify-content: space-between;
     align-items: center;
 	height: $header-height__mobile;
+}
+
+.company-name{
+	color: #ffffff;
+	font-family: sans-serif;
 }
 
 .header-nav {
@@ -67,7 +72,7 @@
     }
 
 	a.button {
-		margin-left: $header-nav--padding-h;
+		//margin-left: $header-nav--padding-h;
 	}
 }
 

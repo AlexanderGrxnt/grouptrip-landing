@@ -4,7 +4,7 @@
 $palette: (
 	light: (
 		1: #ECEDED,
-		2: #9CA9B3,
+		2: #333333,
 		3: #717D86
 	),
 	dark: (
@@ -13,9 +13,9 @@ $palette: (
 		3: #33363A
 	),
 	primary: (
-		1: #6163FF,
+		1: #E9446A,
 		2: #ACADFF,
-		3: #5658DD,
+		3: #E9446A,
 		4: #E9E9FF
  	),
 	secondary: (
@@ -28,7 +28,11 @@ $palette: (
 		error: #FF6171,
 		warning: #FFA173,
 		success: #24E5AF
+	),
+	app: (
+		jade: #63c5dd
 	)
+	
 );
 
 // Base typography: color
@@ -75,11 +79,13 @@ $icon--color: (
 
 // Misc elements: background color
 $bg--color: (
-	body: 			get-color(dark, 1),
+	// body: 			get-color(dark, 1),
+	body: 			linear-gradient(get-color(app, jade),#6bcfeb),
 	body-shadow:	0 20px 48px rgba(get-color(dark, 1), .8),	// body shadow when a boxed layout is used (set to null if don't want a shadow)
 	body-outer:		lighten(get-color(dark, 1), 2%),			// outer bg color when a boxed layout is used
 	bg-color: 		lighten(get-color(light, 1), 9%),			// .has-bg-color helper class
-	shadow: 		0 24px 64px rgba(get-color(dark, 1), .64),	// .has-shadow helper class
+	shadow: 		0 24px 64px rgba(get-color(dark, 1), .64),
+	shadow-small: 	0 1px 4px rgba(get-color(dark, 1), .22),	// .has-shadow helper class
 	code: 			darken(get-color(dark, 1), 3%),
 	code-inverse:	darken(get-color(dark, 1), 3%)
 );
