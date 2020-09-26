@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
+// import ButtonGroup from '../elements/ButtonGroup';
+// import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 
@@ -62,28 +62,31 @@ const Hero = ({
           <div className="hero-content">
             {/* TITLE */}
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Holidays with friends made <span className="text-color-primary">easy</span>.
+              Holidays with friends made <span className="text-color-primary">simple</span>.
             </h1>
 
             <div className="container-xs">
-              <p className="m-0 mb-12 reveal-from-bottom" data-reveal-delay="400">
-                Reduce the pain of organising a group of friends to get away on holiday. Quick and easy voting on the things that matter.
+              <p className="m-0 reveal-from-bottom" data-reveal-delay="400">
+                Reduce the pain of organising a group holiday. Quick and easy voting on the things that matter.
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
+                {/* <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
                     Sign Up
                   </Button>
-                  {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
                     View on Github
-                  </Button> */}
-                </ButtonGroup>
+                  </Button>
+                </ButtonGroup> */}
               </div>
-            </div>
-          
-           
+            </div>  
           </div>
+
+          
+
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+            
+            
             <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
@@ -91,12 +94,28 @@ const Hero = ({
               onClick={openModal}
             >
               <Image
-                className="has-shadow"
-                src={require('./../../assets/images/video-preview.png')}
+                // className="has-shadow"
+                src={require('./../../assets/images/video-preview2.png')}
                 alt="Hero"
-                width={1440}
+                width={900}
                 height={900} />
             </a>
+            <div className="store-buttons">
+              <Image
+                  // className="has-shadow"
+                  src={require('./../../assets/images/apple.png')}
+                  alt="Hero"
+                  width={207}
+              />
+              <Image
+                  // className="has-shadow"
+                  src={require('./../../assets/images/play_store.png')}
+                  alt="Hero"
+                  width={200}
+              />
+            </div>
+            <div className="background-white"/>
+
           </div>
           <Modal
             id="video-modal"

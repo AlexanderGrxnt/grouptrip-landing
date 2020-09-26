@@ -4,6 +4,21 @@
 		padding-top: 0;
 		padding-bottom: $hero--padding-b__mobile;
 	}
+
+	.background-white {
+		background-color: white;
+		width: 110%;
+		height: 100vh;
+		position: absolute;
+		top: 20%;
+		left: -5%;
+		z-index: -1;
+		// border-top-left-radius: 40px;
+		// border-top-right-radius: 40px;
+		border-radius: 40px;
+		box-shadow: 1px 1px 25px rgba(51, 51, 51, 0.404);
+	}
+
 }
 
 .hero-inner {
@@ -21,6 +36,10 @@
 			// prevents stretching
 			align-items: center;
 			vertical-align: top;
+			z-index: 2;
+			// position: absolute;
+			// top: 0;
+			// left: 0;
 		}
 	}
 }
@@ -53,15 +72,32 @@
 
 @include media( '>medium' ) {
 
+	
 	.hero {
-
 		.section-inner {
 			padding-top: $hero--padding-t__desktop;
 			padding-bottom: $hero--padding-b__desktop;
 		}
+
+		.background-white {
+			height: 550px;
+			width:80%;
+			left: 10%;
+		}
+
+		.store-buttons{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			img{
+				margin: 0;
+			}
+		}
 	}
 
 	.hero-inner {
+		
 
 		// Affects only hero full
 		> .hero-content + .hero-figure,
@@ -69,4 +105,10 @@
 			margin-top: $hero--inner-padding-v_desktop;
 		}
 	}
+
+	a {
+		width: 300px;
+	}
+
+	
 }
