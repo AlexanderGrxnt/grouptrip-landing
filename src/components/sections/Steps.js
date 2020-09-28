@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import Image from '../elements/Image';
+//import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionProps.types
