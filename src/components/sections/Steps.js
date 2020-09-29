@@ -117,7 +117,7 @@ const Steps = ({
             <div className="step-container">
               <Image
                   className="step-icon"
-                  src={require('./../../assets/images/budget-icon.png')}
+                  src={require('./../../assets/images/hotel-icon.png')}
                   alt="Hero"
                   width={80}
                   height={80}
@@ -129,6 +129,8 @@ const Steps = ({
                 <p className="step-text">Shortlist and vote on accomodation options based on your group's needs</p>
               </div>
             </div>
+
+            <p className="watch-text">Watch how it works</p>
 
           </div>
         </div>

@@ -21,12 +21,13 @@
 
 	.steps-content {
 		text-align: left;
+		margin-top: 30px;
 
 		.step-container{
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 
 			.step-icon{
 				height: 80px;
@@ -44,7 +45,12 @@
 				font-size: 0.9rem;
 				line-height: 1.2rem;
 			}
+		}
 
+		.watch-text{
+			text-align: center;
+			font-weight: 600;
+			margin-top: 30px;
 		}
 	}
 
