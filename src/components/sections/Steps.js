@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-//import Image from '../elements/Image';
+import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionProps.types
@@ -46,28 +46,90 @@ const Steps = ({
       <div className="container">
         <div className={innerClasses}>
           <div className="steps-content">
-            {/* TITLE */}
-            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">Step 1.</span> Create a new trip
-            </h2>
-            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">Step 2.</span> Choose destination options
-            </h2>
-            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">Step 3.</span> Set available dates
-            </h2>
-            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">Step 4.</span> Set budget limits
-            </h2>
-            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">Step 5.</span> Add friends and let them vote 
-            </h2>
+            {/* STEP 1 */}
+            <div className="step-container">
+              <Image
+                  className="step-icon"
+                  src={require('./../../assets/images/new-icon.png')}
+                  alt="Hero"
+                  width={80}
+                  height={80}
+              />
+              <div>
+                <h2 className="mt-0 mb-16 reveal-from-bottom step-title" data-reveal-delay="200">
+                  <span className="text-color-primary">Step 1. </span>  Create a new trip
+                </h2>
+                <p className="step-text">Give it a name, description and cover photo if you like</p>
+              </div>
+            </div>
+            {/* STEP 2 */}
+            <div className="step-container">
+              <Image
+                  className="step-icon"
+                  src={require('./../../assets/images/plane-icon.png')}
+                  alt="Hero"
+                  width={80}
+                  height={80}
+              />
+              <div>
+                <h2 className="mt-0 mb-16 reveal-from-bottom step-title" data-reveal-delay="200">
+                  <span className="text-color-primary">Step 2. </span>  Choose Locations
+                </h2>
+                <p className="step-text">Select a number of destination options for friends to vote on</p>
+              </div>
+            </div>
 
-            {/* <div className="container-xs">
-              <p className="m-0 reveal-from-bottom" data-reveal-delay="400">
-                Add a name and description 
-              </p>
-            </div>   */}
+            {/* STEP 3 */}
+            <div className="step-container">
+              <Image
+                  className="step-icon"
+                  src={require('./../../assets/images/calendar-icon.png')}
+                  alt="Hero"
+                  width={80}
+                  height={80}
+              />
+              <div>
+                <h2 className="mt-0 mb-16 reveal-from-bottom step-title" data-reveal-delay="200">
+                  <span className="text-color-primary">Step 3. </span>  Check Availability
+                </h2>
+                <p className="step-text">Choose all possible dates and let friends check their availability</p>
+              </div>
+            </div>
+
+            {/* STEP 4 */}
+            <div className="step-container">
+              <Image
+                  className="step-icon"
+                  src={require('./../../assets/images/budget-icon.png')}
+                  alt="Hero"
+                  width={80}
+                  height={80}
+              />
+              <div>
+                <h2 className="mt-0 mb-16 reveal-from-bottom step-title" data-reveal-delay="200">
+                  <span className="text-color-primary">Step 4. </span>  Set Budget Limits
+                </h2>
+                <p className="step-text">Set budget limits fairly based on what everyone can afford</p>
+              </div>
+            </div>
+
+            {/* STEP 5 */}
+            <div className="step-container">
+              <Image
+                  className="step-icon"
+                  src={require('./../../assets/images/budget-icon.png')}
+                  alt="Hero"
+                  width={80}
+                  height={80}
+              />
+              <div>
+                <h2 className="mt-0 mb-16 reveal-from-bottom step-title" data-reveal-delay="200">
+                  <span className="text-color-primary">Step 5. </span>  Find Accomodation
+                </h2>
+                <p className="step-text">Shortlist and vote on accomodation options based on your group's needs</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
