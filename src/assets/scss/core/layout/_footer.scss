@@ -85,7 +85,7 @@
 .footer-nav {
 
 	a {
-		display: flex;
+		//display: flex;
 	}
 
 	ul {
@@ -95,6 +95,7 @@
 		align-items: center;
 		white-space: nowrap;
 		margin-bottom: 0;
+		//padding: 30px;
 	}
 }
 
@@ -106,7 +107,7 @@
 	}
 
 	li {
-		padding: 0 $footer-social--outer-padding-h;
+		padding: 0 30px;
 	}
 
 	a {
@@ -174,9 +175,14 @@
 	.footer-bottom {
 
 		&.space-between {
-			display: flex;
-			justify-content: space-between;
+			//display: flex;
+			justify-content: center;
 			align-items: center;
+		}
+
+		img{
+			margin: auto;
+			margin-bottom: 10px;
 		}
 	}
 

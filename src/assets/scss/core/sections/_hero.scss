@@ -3,6 +3,7 @@
 	.section-inner {
 		padding-top: 0;
 		padding-bottom: $hero--padding-b__mobile;
+		//background-color: white;
 	}
 
 	.background-white {
@@ -15,13 +16,14 @@
 		z-index: -1;
 		// border-top-left-radius: 40px;
 		// border-top-right-radius: 40px;
-		border-radius: 40px;
+		border-radius: 25px;
 		box-shadow: 1px 1px 25px rgba(51, 51, 51, 0.404);
 	}
 
 	.steps-content {
 		text-align: left;
 		margin-top: 30px;
+		//background-color: white;
 
 		.step-container{
 			display: flex;
@@ -47,16 +49,26 @@
 			}
 		}
 
-		.watch-text {
-			text-align: center;
-			font-weight: 600;
-			margin-top: 30px;
-			margin-bottom: 0;
-		}
+		.watch-container {
+			//background-color: rgba(255, 255, 255, 0.904);
+			width:70%;
+			margin: auto;
+			margin-bottom: 25px;
+			padding: 5px;
+			border-radius: 50%;
+			margin-top: -5px;
+		
+			.watch-text {
+				text-align: center;
+				font-weight: 600;
+				//margin-top: 30px;
+				margin-bottom: 0;
+			}
 
-		.phone-image {
-			margin-top: 34px;
-			margin-bottom: -10px;
+			.phone-image {
+				margin-top: 34px;
+				margin-bottom: -10px;
+			}
 		}
 	}
 
@@ -116,8 +128,8 @@
 	
 	.hero {
 		.section-inner {
-			padding-top: $hero--padding-t__desktop;
-			padding-bottom: $hero--padding-b__desktop;
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 
 		.background-white {
@@ -133,6 +145,26 @@
 
 			img{
 				margin: 0;
+			}
+		}
+
+		.steps-content{
+			//text-align: center;
+			margin: auto;
+			width: 50%;
+			margin-top: 10px;
+
+			.phone-watch{
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: center;
+				align-items: center;
+				width: 120%;
+				margin: auto;
+
+				.watch-container {
+					//padding-right: 50px;
+				}
 			}
 		}
 	}
@@ -152,4 +184,42 @@
 	}
 
 	
+}
+
+@include media( '>large' ) {
+	.hero {
+		.steps-content{
+			.phone-watch{
+				// display: flex;
+				// flex-direction: row-reverse;
+				// justify-content: center;
+				// align-items: center;
+				width: 120%;
+				margin: auto;
+
+				.watch-container {
+					//width: 200px;
+				}
+			}
+		}
+	}
+}
+
+@include media( '>x-large' ) {
+	.hero {
+		.steps-content{
+			.phone-watch{
+				// display: flex;
+				// flex-direction: row-reverse;
+				// justify-content: center;
+				// align-items: center;
+				width: 90%;
+				margin: auto;
+
+				.watch-container {
+					//width: 200px;
+				}
+			}
+		}
+	}
 }
