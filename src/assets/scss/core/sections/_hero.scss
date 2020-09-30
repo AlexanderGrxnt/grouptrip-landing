@@ -8,7 +8,7 @@
 	.background-white {
 		background-color: white;
 		width: 110%;
-		height: 97vh;
+		height: 82%;
 		position: absolute;
 		top: 20%;
 		left: -5%;
@@ -47,10 +47,16 @@
 			}
 		}
 
-		.watch-text{
+		.watch-text {
 			text-align: center;
 			font-weight: 600;
 			margin-top: 30px;
+			margin-bottom: 0;
+		}
+
+		.phone-image {
+			margin-top: 34px;
+			margin-bottom: -10px;
 		}
 	}
 

@@ -130,7 +130,22 @@ const Steps = ({
               </div>
             </div>
 
-            <p className="watch-text">Watch how it works</p>
+            <p className="watch-text">See how it works</p>
+            <Image
+                  className="step-icon"
+                  src={require('./../../assets/images/play-icon.png')}
+                  alt="Hero"
+                  width={60}
+                  height={60}
+            />
+
+            <Image
+                  className="phone-image"
+                  src={require('./../../assets/images/3d-phone.png')}
+                  alt="Hero"
+                  width={300}
+                  //height={60}
+            />
 
           </div>
         </div>
