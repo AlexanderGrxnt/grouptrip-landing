@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
+import Modal from '../elements/Modal';
 
 const propTypes = {
   ...SectionProps.types
@@ -21,6 +22,18 @@ const Steps = ({
   invertColor,
   ...props
 }) => {
+
+  const [videoModalActive, setVideomodalactive] = useState(false);
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(true);
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(false);
+  }   
 
 
   const outerClasses = classNames(
@@ -133,14 +146,30 @@ const Steps = ({
             <div className="phone-watch">
               <div className="watch-container">
                 <p className="watch-text">See how it works</p>
-                <Image
-                      className="step-icon"
-                      src={require('./../../assets/images/play-icon.png')}
-                      alt="Hero"
-                      width={60}
-                      height={60}
-                />
+                <a
+                  data-video="https://player.vimeo.com/463912246"
+                  href="#0"
+                  aria-controls="video-modal"
+                  onClick={openModal}
+                >
+                  <Image
+                        className="step-icon"
+                        src={require('./../../assets/images/play-icon.png')}
+                        alt="Hero"
+                        width={60}
+                        height={60}
+                  />
+                </a>
               </div>
+
+              <Modal
+                id="video-modal"
+                show={videoModalActive}
+                handleClose={closeModal}
+                video="https://player.vimeo.com/video/463912246"
+                videoTag="iframe" 
+              />
+              
 
               <Image
                     className="phone-image"
